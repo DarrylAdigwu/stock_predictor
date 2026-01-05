@@ -1,0 +1,27 @@
+{
+  "name": "stock_predictor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run dev --prefix client",
+    "server": "npm run devStart --prefix server",
+    "devSet": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarrylAdigwu/stock_predictor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DarrylAdigwu/stock_predictor/issues"
+  },
+  "homepage": "https://github.com/DarrylAdigwu/stock_predictor#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
