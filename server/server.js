@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
-import { keyRouter } from "./src/routes/key.routes.js";
+import { aiRouter } from "./src/routes/ai.routes.js";
 
 // Create server
 const server = express();
@@ -32,7 +32,7 @@ server.use(express.json());
 server.use(express.urlencoded({extended:true}));
 
 // API routes
-server.use("/key", keyRouter)
+server.use("/ai", aiRouter)
 
 // Run server
 server.listen(process.env.PORT, () => {
